@@ -1,6 +1,11 @@
-# Requirements
+# Nickname Validator
 
-Nickname must:
+Simple frontend project used to exercise CI/CD with GitHub Actions and GitHub Pages.
+
+
+## Validation Rules
+
+A nickname must:
 
  - Be 3-20 characters
  - Start with a letter
