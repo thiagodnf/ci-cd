@@ -1,15 +1,19 @@
 {
     "name": "ci-cd",
-    "description": "",
+    "description": "Example of CI/CD",
     "version": "0.0.6",
     "license": "MIT",
     "homepage": "ci-cd",
+    "type": "module",
     "keywords": [],
     "scripts": {
-        "dev": "npm run lint-fix && next dev",
-        "lint": "npx eslint .",
-        "build": "next build && next export",
-        "lint-fix": "npx eslint . --fix",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
         "update-dependencies": "ncu -u"
+    },
+    "dependencies": {
+        "express": "^5.2.1"
+    },
+    "devDependencies": {
+        "jest": "^30.2.0"
     }
 }
