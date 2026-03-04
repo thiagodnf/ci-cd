@@ -10,7 +10,7 @@ describe('validateNickname', () => {
 
     test('too short', () => {
         const { rules } = validate('ab');
-        expect(rules.length).toBe(true);
+        expect(rules.length).toBe(false);
     });
 
     test('invalid start character', () => {
